@@ -36,7 +36,7 @@ function prepareGoods(
         return good1.localeCompare(good2);
 
       case SortBy.wordLength:
-        return good1[SortBy.wordLength] - good2[SortBy.wordLength];
+        return good1.length - good2.length;
 
       default:
         return 0;
